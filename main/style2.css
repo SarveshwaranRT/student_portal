@@ -1,0 +1,77 @@
+body {
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-top: 30px;
+    color: #004d40;
+  }
+  
+  .registration-form {
+    width: 350px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 2px solid #004d40;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  .registration-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+  }
+  
+  .registration-form input[type="text"],
+  .registration-form input[type="email"],
+  .registration-form input[type="password"],
+  .registration-form input[type="date"],
+  .registration-form input[type="tel"],
+  .registration-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .registration-form input[type="radio"] {
+    margin: 0 5px 0 10px;
+  }
+  
+  .registration-form input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #004d40;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .registration-form input[type="submit"]:hover {
+    background-color: #00796b;
+  }
+  
+  .back-to-login {
+    margin-top: 20px;
+  }
+  
+  .back-to-login a {
+    color: #004d40;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-to-login a:hover {
+    text-decoration: underline;
+  }
+  
