@@ -1,6 +1,18 @@
 <?php
+
+session_start();
+// Enable error reporting for debugging
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 // Include the database connection file
 require_once "db_config.php";
+
+// Start the session
+
+
+// Include the session timeout script to manage inactivity
+include('session_timeout.php');  // Ensure you have created this file
 
 // Define variables and initialize with empty values
 $email = $password = "";
@@ -45,13 +57,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         // Check if the password is correct
                         if (password_verify($password, $hashed_password)) {
                             // Password is correct, start a new session
-                            session_start();
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["email"] = $email;
 
-                            // Redirect to welcome page or home page
-                            header("location: index.html");
+                            // Set last activity time for session timeout logic
+                            $_SESSION['last_activity'] = time();
+
+                            // Redirect to home page (index.php) after successful login
+                            header("Location: index.php");
+                            exit();
                         } else {
                             // Password is incorrect
                             $password_err = "The password you entered was not valid.";

@@ -1,54 +1,154 @@
+/* Global Styles */
 body {
-    background: linear-gradient(to right, #e0f7fa, #80deea);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #006064;
-    text-shadow: 2px 2px 4px #aaa;
-    border: 3px solid #004d40;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #b2ebf2;
-    display: inline-block;
-  }
-  
-  p {
-    color: #004d40;
-    font-size: 18px;
-    margin-top: 20px;
-  }
-  
-  nav {
-    background-color: #004d40;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 20px;
-  }
-  
-  nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #80deea;
-  }
-  
-  
+  background: linear-gradient(to right, #e0f7fa, #80deea);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #004d40;
+}
+
+/* Header Styles */
+h1 {
+  color: #006064;
+  text-shadow: 2px 2px 4px #aaa;
+  border: 3px solid #004d40;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #b2ebf2;
+  display: inline-block;
+}
+
+/* Paragraph Styling */
+p {
+  color: #004d40;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #004d40;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #80deea;
+}
+
+/* Form Styling */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  display: inline-block;
+}
+
+form input[type="text"] {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #80deea;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+form button {
+  background-color: #004d40;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00796b;
+}
+
+/* Task List Styling */
+ul#task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+ul#task-list li {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul#task-list li:hover {
+  background-color: #e0f7fa;
+}
+
+ul#task-list li button {
+  background-color: #ff1744;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+ul#task-list li button:hover {
+  background-color: #d50000;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #004d40;
+}
+ul#task-list li form button {
+  background-color: #ff1744;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul#task-list li form button:hover {
+  background-color: #d50000;
+}
